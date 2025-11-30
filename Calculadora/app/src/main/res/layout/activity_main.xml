@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/main"
+    android:background="@color/gray_dark"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="HardcodedText"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/white"
+            android:id="@+id/textoOperacion"
+            android:lines="2"
+            android:maxLines="2"
+            android:textAlignment="textEnd"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@id/textoResultados"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/white"
+            android:id="@+id/textoResultados"
+            android:lines="1"
+            android:maxLines="1"
+            android:textAlignment="textEnd"
+            android:textSize="42sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <LinearLayout
+        style="@style/filaBtn">
+
+        <Button
+            style="@style/numeroBtn"
+            android:text="AC"
+            android:id="@+id/btnLimpiar"
+            android:textColor="@color/red"/>
+
+        <Button
+            style="@style/numeroBtn"
+            android:text="⌫"
+            android:id="@+id/btnBorrar"
+            android:textColor="@color/red"/>
+
+        <Button
+            style="@style/operacionBtn"
+            android:id="@+id/btnPorcentaje"
+            android:text="%"/>
+
+        <Button
+            style="@style/operacionBtn"
+            android:id="@+id/btnDividir"
+            android:text="/"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/filaBtn">
+
+        <Button
+            style="@style/numeroBtn"
+            android:id="@+id/btn7"
+            android:text="7"/>
+
+        <Button
+            style="@style/numeroBtn"
+            android:id="@+id/btn8"
+            android:text="8"/>
+
+        <Button
+            style="@style/numeroBtn"
+            android:id="@+id/btn9"
+            android:text="9"/>
+
+        <Button
+            style="@style/operacionBtn"
+            android:id="@+id/btnMultiplicar"
+            android:text="x"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/filaBtn">
+
+        <Button
+            style="@style/numeroBtn"
+            android:id="@+id/btn6"
+            android:text="6"/>
+
+        <Button
+            style="@style/numeroBtn"
+            android:id="@+id/btn5"
+            android:text="5"/>
+
+        <Button
+            style="@style/numeroBtn"
+            android:id="@+id/btn4"
+            android:text="4"/>
+
+        <Button
+            style="@style/operacionBtn"
+            android:id="@+id/btnRestar"
+            android:text="-"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/filaBtn">
+
+        <Button
+            style="@style/numeroBtn"
+            android:id="@+id/btn3"
+            android:text="3"/>
+
+        <Button
+            style="@style/numeroBtn"
+            android:id="@+id/btn2"
+            android:text="2"/>
+
+        <Button
+            style="@style/numeroBtn"
+            android:id="@+id/btn1"
+            android:text="1"/>
+
+        <Button
+            style="@style/operacionBtn"
+            android:id="@+id/btnSumar"
+            android:text="+"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/filaBtn">
+
+        <Button
+            style="@style/numeroBtn"
+            android:id="@+id/btn0"
+            android:text="0"/>
+
+        <Button
+            style="@style/numeroBtn"
+            android:id="@+id/btnComa"
+            android:text=","/>
+
+        <Button
+            style="@style/operacionBtn"
+            android:layout_weight="2"
+            android:textColor="@color/red"
+            android:id="@+id/btnIgual"
+            android:text="="/>
+
+    </LinearLayout>
+
+</LinearLayout>
